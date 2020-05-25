@@ -1,0 +1,16 @@
+It contains example of the use of the residual neural network for image recognition. 
+Use of High Performance Computing Clusters are recommended to use this program.
+
+The dataset is CIFAR 10. 
+
+if you can not download the dataset on your own then 
+Run the following Python code on your machine to cifar10 dataset:
+
+    python generate_cifar10_tfrecords.py --data-dir=${PWD}/cifar-10-data
+
+    and use ${PWD}/cifar-10-data to run cifar10_main.py:
+  
+    python cifar10_main.py --data-dir=${PWD}/cifar-10-data \
+                         --job-dir=${PWD}/output \
+                         --num-gpus=1 \
+                         --train-steps=1000
