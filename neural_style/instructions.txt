@@ -1,0 +1,9 @@
+Download trained network of VGG-19 CNN from the following link.
+
+http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+
+Use the following command to run the program.
+
+python ${PWD}/neural_style.py --content img-1.jpg --styles style-img.jpg --content-weight 2.0 --style-weight 1000.0
+
+
